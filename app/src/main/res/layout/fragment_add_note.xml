@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minWidth="1000dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.komputer.pinit.Fragments.AddNoteFragment">
+
+
+    <TextView
+        android:id="@+id/fragment_addOrEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:textSize="18dp"
+         />
+    <EditText
+        android:id="@+id/fragment_add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title" />
+
+    <EditText
+        android:id="@+id/fragment_add_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:padding="@dimen/margin_small"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@color/cardview_light_background"
+            android:layout_weight="1"
+            android:text="delete" />
+
+        <Button
+            android:id="@+id/fragment_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:padding="@dimen/margin_small"
+            android:layout_weight="3"
+            android:text="Save" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="332dp">
+
+    </com.google.android.gms.maps.MapView>
+
+
+
+</LinearLayout>
